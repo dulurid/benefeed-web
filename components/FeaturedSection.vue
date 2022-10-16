@@ -7,16 +7,14 @@ const targetIsVisible = useElementVisibility(target)
   <section class="h-auto bg-white">
     <div class="px-10 pt-24 mx-auto max-w-7xl">
       <div class="w-full mx-auto text-left md:text-center">
-        <h1 class="mb-8">
-          Kinerja <span class="--text-gradient">Investasi</span> dan<br
-            class="lg:block hidden"
-          />
-          watchlist <span class="--text-gradient">Benefeed</span> VS IHSG
+        <h1 class="text-4xl font-bold">
+          Investment Performance <br />
+          and Watchlist Benefeed VS IHSG
         </h1>
-        <p class="px-0 mb-6 text-lg text-gray-600 lg:px-24">
-          Say hello to the number one source for all your design needs. Drag and
-          drop designs, edit designs, and modify the components to help tell
-          your story.
+        <p class="mt-6 text-xl text-gray-600 max-w-4xl mx-auto text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
         </p>
       </div>
     </div>
@@ -24,7 +22,7 @@ const targetIsVisible = useElementVisibility(target)
       class="overflow-hidden relative component_block bg-gradient-to-b from-white to-gray-50"
     >
       <div
-        class="max-w-7xl pt-8 md:pb-10 lg:pb-32 flex flex-col w-full h-full items-center justify-center mx-auto"
+        class="max-w-7xl md:pb-10 lg:pb-32 -mt-16 flex flex-col w-full h-full items-center justify-center mx-auto"
       >
         <div class="flex items-center h-full w-full rounded-md">
           <div

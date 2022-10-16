@@ -1,203 +1,98 @@
 <script setup></script>
 
 <template>
-  <section class="w-full px-10 py-12 bg-white lg:py-20">
+  <footer class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8">
     <div
-      class="relative flex max-w-7xl px-24 py-16 mx-auto bg-primary-500 rounded-lg lg:py-20"
+      class="border-t border-slate-900/5 py-10 flex flex-col items-center justify-center"
     >
-      <div class="flex">
-        <div class="relative z-50 md:w-7/12">
-          <svg
-            class="absolute w-6 h-auto -ml-10 text-primary-400 fill-current"
-            viewBox="0 0 100 84"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M40.87 0C28.12 0 18.117 3.91 10.873 11.826 3.613 19.742 0 32.09 0 48.913v34.941H42.032V46.112H21.745c0-9.242 1.509-16.114 4.468-20.613 2.959-4.5 7.838-6.762 14.656-6.762V0zm57.64 0c-6.375 0-12.052.938-17.039 2.86-4.987 1.922-9.271 4.866-12.78 8.877-3.507 4.026-6.196 9.133-8.071 15.34-1.861 6.223-2.8 13.478-2.8 21.836v34.941H100V46.112H79.744c0-9.242 1.48-16.114 4.438-20.613 2.959-4.5 7.74-6.762 14.328-6.762V0z"
-            />
-          </svg>
-          <blockquote class="text-2xl font-thin text-white lg:text-3xl">
-            Saved me so much time! I would highly recommend this tool to all my
-            friends and co-workers.
-          </blockquote>
-          <p class="mt-3 text-sm text-primary-300">
-            Jake Smith, Founder @ DevStudio Inc.
-          </p>
-          <p class="mt-10 text-xs text-primary-300">
-            Want to see it in action? No credit card required.
-          </p>
-          <a
-            href="#_"
-            class="inline-block w-full px-10 py-3 mt-4 text-base font-medium text-center text-primary-500 bg-gray-50 rounded md:w-auto"
-            >Start your free 14-day trial</a
-          >
-        </div>
-      </div>
-      <img
-        src="https://cdn.devdojo.com/images/august2021/user-bg.png"
-        class="absolute bottom-0 right-0 z-20 block h-full mr-6 origin-bottom transform scale-90 opacity-10 lg:hidden lg:mr-12"
-      />
-      <img
-        src="https://cdn.devdojo.com/images/august2021/user-bg.png"
-        class="absolute bottom-0 right-0 z-20 hidden h-full mr-6 origin-bottom transform scale-110 lg:block lg:mr-12"
-      />
-    </div>
-  </section>
+      <Logo class="h-8 w-auto" />
+      <p class="mt-5 text-center text-sm leading-6 text-slate-500">
+        © 2022 Benefeed. All rights reserved.
+      </p>
 
-  <footer class="w-full bg-white">
-    <div class="px-8 py-12 mx-auto max-w-7xl">
-      <div
-        class="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20"
-      >
-        <div class="col-span-3">
-          <svg
-            class="h-10 w-auto"
-            viewBox="0 0 71 71"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M39.7304 44.375H13.0167C7.63251 44.375 4.20084 38.6063 6.80417 33.873L13.6971 21.3296L20.1463 9.58501C22.8383 4.70376 29.8792 4.70376 32.5713 9.58501L39.05 21.3296L42.1563 26.98L45.9429 33.873C48.5463 38.6063 45.1146 44.375 39.7304 44.375Z"
-              fill="#199473"
-            />
-            <path
-              opacity="0.4"
-              d="M65.0833 45.8542C65.0833 56.4746 56.4746 65.0833 45.8542 65.0833C35.2338 65.0833 26.625 56.4746 26.625 45.8542C26.625 45.3512 26.6546 44.8779 26.6842 44.375H39.7304C45.1146 44.375 48.5462 38.6063 45.9429 33.873L42.1562 26.98C43.3396 26.7433 44.5821 26.625 45.8542 26.625C56.4746 26.625 65.0833 35.2338 65.0833 45.8542Z"
-              fill="#199473"
-            />
-          </svg>
-          <p class="my-4 text-xs leading-normal text-gray-500">
-            Beautifully hand-crafted components to help you build amazing pages.
-          </p>
-        </div>
-        <nav class="col-span-1 md:col-span-1 lg:col-span-2">
-          <p
-            class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase"
-          >
-            Product
-          </p>
+      <ul class="flex items-center space-x-3 mt-9">
+        <li>
           <a
             href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Features</a
+            title=""
+            class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
           >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Integrations</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Documentation</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >FAQs</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Pricing</a
-          >
-        </nav>
-        <nav class="col-span-1 md:col-span-1 lg:col-span-2">
-          <p
-            class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase"
-          >
-            About
-          </p>
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Our Story</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Company</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Privacy</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Blog</a
-          >
-        </nav>
-        <nav class="col-span-2 md:col-span-1 lg:col-span-2">
-          <p
-            class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase"
-          >
-            Contact
-          </p>
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Advertising</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Press</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Email</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Partners</a
-          >
-          <a
-            href="#"
-            class="flex mb-3 text-sm font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary"
-            >Jobs</a
-          >
-        </nav>
-        <div class="col-span-3">
-          <p
-            class="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase"
-          >
-            SUBSCRIBE TO OUR NEWSLETTER
-          </p>
-          <form action="#" class="mb-2">
-            <div
-              class="relative flex items-center overflow-hidden border border-gray-200 rounded-lg"
-              data-rounded="rounded-lg"
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
             >
-              <input
-                class="w-full px-3 py-2 text-base leading-normal transition duration-150 ease-in-out bg-white appearance-none focus:outline-none"
-                type="email"
-                placeholder="Enter your email"
-              />
-              <button
-                class="px-3 py-2 text-sm font-medium text-center text-white no-underline bg-primary-500 border-2 border-primary-500"
-                data-primary="primary-500"
-                type="submit"
-              >
-                Subscribe
-              </button>
-            </div>
-          </form>
-          <p class="text-xs leading-normal text-gray-500">
-            Get the latest updates and news about our service.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center"
-      >
-        <p class="mb-6 text-sm text-left text-gray-600 md:mb-0">
-          &copy; Copyright 2021 Benefeed. All Rights Reserved.
-        </p>
-      </div>
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            title=""
+            class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+          >
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            title=""
+            class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+          >
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"
+              ></path>
+              <circle cx="16.806" cy="7.207" r="1.078"></circle>
+              <path
+                d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#"
+            title=""
+            class="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-blue-600 focus:bg-blue-600"
+          >
+            <svg
+              class="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+              ></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 </template>

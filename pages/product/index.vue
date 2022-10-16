@@ -34,12 +34,12 @@ console.log(products)
             :field="product.data.caption"
           />
 
-          <RouterLink
-            :to="`/product/${product.uid}`"
+          <a
+            :href="`/product/${product.uid}`"
             class="bg-primary-500 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
           >
             Learn more
-          </RouterLink>
+          </a>
         </div>
         <img
           class="h-[350px] w-auto"

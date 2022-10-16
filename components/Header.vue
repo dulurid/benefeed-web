@@ -58,7 +58,7 @@ export default {}
                   :key="index"
                   class="w-full md:w-1/4 border-l border-gray-100"
                 >
-                  <NuxtLink
+                  <a
                     to="/product"
                     class="relative hover:bg-primary-50 block p-6 lg:p-7 lg:py-10 transition duration-300"
                   >
@@ -78,7 +78,7 @@ export default {}
                         alt=""
                       />
                     </div>
-                  </NuxtLink>
+                  </a>
                 </li>
               </ul>
             </div>

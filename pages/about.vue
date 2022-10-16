@@ -1,63 +1,126 @@
 <template>
   <div>
-    <section class="h-auto bg-white">
-      <div class="px-10 py-24 mx-auto max-w-7xl">
-        <div class="w-full mx-auto text-left md:text-center">
-          <h1
-            class="mb-6 text-5xl font-extrabold leading-none max-w-5xl mx-auto tracking-normal text-gray-900 sm:text-6xl md:text-6xl lg:text-7xl md:tracking-tight"
-          >
-            The
-            <span
-              class="w-full text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 lg:inline"
-              >Number One Source</span
+    <section class="py-10 bg-white sm:py-16 lg:py-24">
+      <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
+          <div class="pr-12 sm:pr-0">
+            <div class="relative max-w-xs mb-12">
+              <img
+                class="object-bottom rounded-md"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
+                alt=""
+              />
+
+              <img
+                class="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
+                src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div>
+            <h2
+              class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
             >
-            for<br class="lg:block hidden" />
-            all your design needs.
-          </h1>
-          <p class="px-0 mb-6 text-lg text-gray-600 md:text-xl lg:px-24">
-            Say hello to the number one source for all your design needs. Drag
-            and drop designs, edit designs, and modify the components to help
-            tell your story.
-          </p>
+              Grow business with Celebration.
+            </h2>
+            <p class="mt-4 text-base leading-relaxed text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section
-      class="flex items-center justify-center py-10 text-white bg-white sm:py-16 md:py-24 lg:py-32"
-    >
-      <div class="relative max-w-3xl px-10 text-center text-white auto lg:px-0">
-        <div class="flex flex-col w-full md:flex-row">
-          <!-- Top Text -->
-          <div class="flex justify-between">
-            <h1
-              class="relative flex flex-col text-6xl font-extrabold text-left text-black"
+    <section class="py-10 bg-white sm:py-16 lg:py-20">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 xl:gap-x-20"
+        >
+          <div class="flex items-start">
+            <svg
+              class="flex-shrink-0 w-10 h-10 text-blue-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              Crafting
-              <span>Powerful</span>
-              <span>Experiences</span>
-            </h1>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <div class="ml-6">
+              <p class="text-base font-medium text-black/50">Call us</p>
+              <p class="mt-4 text-xl font-medium text-gray-900">
+                (316) 555-0116
+              </p>
+              <p class="mt-1 text-xl font-medium text-gray-900">
+                (316) 555-0117
+              </p>
+            </div>
           </div>
-          <!-- Right Image -->
-          <div
-            class="relative top-0 right-0 h-64 mt-12 md:-mt-16 md:absolute md:h-96"
-          >
-            <img
-              src="https://cdn.devdojo.com/images/december2020/designs3d.png"
-              class="object-cover mt-3 mr-5 h-80 lg:h-96"
-            />
+
+          <div class="flex items-start">
+            <svg
+              class="flex-shrink-0 w-10 h-10 text-blue-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <div class="ml-6">
+              <p class="text-base font-medium text-black/50">Email us</p>
+              <p class="mt-4 text-xl font-medium text-gray-900">
+                contact@example.com
+              </p>
+              <p class="mt-1 text-xl font-medium text-gray-900">
+                support@example.com
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start">
+            <svg
+              class="flex-shrink-0 w-10 h-10 text-blue-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+            </svg>
+            <div class="ml-6">
+              <p class="text-base font-medium text-black/50">Location</p>
+              <p class="mt-4 text-xl font-medium leading-relaxed text-gray-900">
+                8502 Preston Rd. Inglewood, Maine 98380, USA
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- Separator -->
-        <div class="my-16 border-b border-gray-300 lg:my-24"></div>
-
-        <!-- Bottom Text -->
-        <h2 class="text-left text-gray-500 xl:text-xl">
-          Building beautiful designs for your next project. We've unlocked the
-          secret to converting visitors into customers. Download our re-usable
-          and extandable components today.
-        </h2>
       </div>
     </section>
   </div>
