@@ -41,7 +41,7 @@ const { data: product } = await useAsyncData('product', () =>
         <div class="bg-gray-50 p-6 rounded-xl" v-for="index in 3" :key="index">
           <img
             class="h-32 w-auto"
-            src="/illustrations/coin-in-hand 1.png"
+            src="/illustrations/coin-in-hand-1.png"
             alt=""
           />
           <p class="font-semibold text-lg tracking-tight">Sub Product 1</p>
