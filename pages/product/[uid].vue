@@ -1,20 +1,22 @@
 <script setup>
-const route = useRoute()
-const { client } = usePrismic()
-const { data: product } = await useAsyncData('product', () =>
-  client.getByUID('products', route.params.uid)
-)
+// const route = useRoute()
+// const { client } = usePrismic()
+// const { data: product } = await useAsyncData('product', () =>
+//   client.getByUID('products', route.params.uid)
+// )
 </script>
 
 <template>
   <div class="max-w-7xl mx-auto px-4 pb-16">
     <div class="grid grid-cols-2 gap-4 py-16 place-items-center">
       <div class="flex flex-col">
-        <prismic-text
+        <!-- <prismic-text
           wrapper="h1"
           class="text-4xl font-bold"
           :field="product.data.title"
-        />
+        /> -->
+
+        <h1 class="text-4xl font-bold">Product Title</h1>
 
         <p class="mt-6 text-xl text-gray-600">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -25,11 +27,16 @@ const { data: product } = await useAsyncData('product', () =>
 
       <div>
         <div class="flex items-center justify-center">
-          <img
-            class="h-[350px] w-auto"
-            src="/illustrations/business-3d-close-up-of-businesswoman-in-red-suit-with-paper-coffee-cup.png"
-            alt=""
-          />
+          <div class="relative group hidden lg:flex">
+            <div
+              class="absolute transitiona-all duration-1000 opacity-25 -inset-px bg-gradient-to-r from-orange-400 via-primary-300 to-primary-600 rounded-xl blur-3xl filter group-hover:opacity-50 group-hover:-inset-1 group-hover:duration-200"
+            ></div>
+            <img
+              class="h-[450px] w-auto z-10"
+              src="/illustrations/business-3d-young-women-standing.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

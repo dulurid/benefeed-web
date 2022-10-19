@@ -7,9 +7,7 @@ const { data } = await useAsyncData('career', () =>
 
 <template>
   <div>
-    <section
-      class="py-10 bg-gradient-to-b from-orange-50/10 to-orange-100/50 sm:py-16 lg:py-24"
-    >
+    <section class="py-10 bg-gradient-to-b from-orange-50/10 to-orange-100/50">
       <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="grid items-center md:grid-cols-2 md:gap-x-20 gap-y-10">
           <div class="relative pl-16 pr-10 sm:pl-6 md:pl-0 xl:pr-0 md:order-2">
@@ -22,8 +20,8 @@ const { data } = await useAsyncData('career', () =>
             <div class="relative max-w-xs ml-auto">
               <div class="overflow-hidden aspect-w-3 aspect-h-4">
                 <img
-                  class="object-cover w-full h-full scale-150"
-                  src="https://cdn.rareblocks.xyz/collection/celebration/images/features/3/man-woman-discussing.jpg"
+                  class="object-cover w-full h-full"
+                  src="/illustrations/business-3d-young-women-taking-a-selfie.png"
                   alt=""
                 />
               </div>
@@ -48,12 +46,12 @@ const { data } = await useAsyncData('career', () =>
                     <span
                       class="block mt-3 text-xl font-bold text-black sm:mt-6 sm:text-4xl lg:text-5xl"
                     >
-                      2,984
+                      40
                     </span>
                     <span
                       class="block mt-2 text-sm font-medium leading-snug text-amber-900 sm:text-base"
                     >
-                      Customer chat<br />served on July
+                      Employees
                     </span>
                   </div>
                 </div>
@@ -86,7 +84,7 @@ const { data } = await useAsyncData('career', () =>
       </div>
     </section>
 
-    <section class="py-10 bg-white sm:py-16 lg:py-24">
+    <section class="py-10 bg-white">
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div>
           <h2

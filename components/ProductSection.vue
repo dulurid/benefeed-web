@@ -1,106 +1,74 @@
-<script setup></script>
+<script setup>
+const products = [
+  {
+    name: 'Equity Trading',
+    slogan: 'Become a trading partner',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail: '/illustrations/business-3d-young-women-standing.png',
+  },
+  {
+    name: 'Fixed Income',
+    slogan: 'Better understand fixed income',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail: '/illustrations/image_3.png',
+  },
+  {
+    name: 'Research',
+    slogan: 'Maximizing added value',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail:
+      '/illustrations/business-3d-businesswoman-in-red-suit-with-paper-coffee-cup.png',
+  },
+  {
+    name: 'Investment Banking',
+    slogan: 'Achieve short & long term goals',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail:
+      '/illustrations/business-3d-businesswoman-in-red-suit-showing-thumbs-up.png',
+  },
+]
+</script>
 
 <template>
   <section class="w-full bg-white">
-    <div class="py-10 mx-auto max-w-7xl md:px-8">
-      <h1 class="mb-8">Our Products</h1>
-      <div class="flex flex-col mt-10 md:flex-row md:mt-8 md:space-x-8">
-        <div
-          class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-gray-50 md:rounded-xl"
-        >
-          <div class="flex flex-col px-10 pb-8 pt-8 sm:px-16">
-            <h3 class="text-xl leading-none">Equity Trading</h3>
-            <p
-              class="mt-5 text-3xl mb-4 font-semibold leading-none tracking-tighter md:text-4xl"
-            >
-              Become a trading partner
-            </p>
-
-            <p class="font-light text-gray-600">
-              Just trade in your eligible computer for credit or recycle it for
-              free. It’s good for you and the planet.
-            </p>
-            <a
-              href="#_"
-              class="bg-primary-500 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
-              >Learn more
-            </a>
-          </div>
-          <img class="h-[350px] w-auto" src="/illustrations/image_2.png" />
-        </div>
-        <div
-          class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-gray-50 md:rounded-xl"
-        >
-          <div class="flex flex-col px-10 pb-8 pt-8 sm:px-16">
-            <h3 class="text-xl leading-none">Fixed Income</h3>
-            <p
-              class="mt-5 text-3xl mb-4 font-semibold leading-none tracking-tighter md:text-4xl"
-            >
-              Better understand fixed income
-            </p>
-
-            <p class="font-light text-gray-600">
-              Just trade in your eligible computer for credit or recycle it for
-              free. It’s good for you and the planet.
-            </p>
-            <a
-              href="#_"
-              class="bg-primary-500 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
-              >Learn more
-            </a>
-          </div>
-          <img class="h-[350px] w-auto" src="/illustrations/image_3.png" />
-        </div>
+    <div class="py-16 mx-auto max-w-7xl md:px-8">
+      <div class="w-full mx-auto text-left md:text-center pb-10">
+        <h1 class="text-4xl font-bold">Our Products</h1>
+        <p class="mt-6 text-xl text-gray-600 max-w-4xl mx-auto text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
+        </p>
       </div>
-      <div class="flex flex-col mt-10 md:flex-row md:mt-8 md:space-x-8">
+      <div class="grid grid-cols-2 gap-8">
         <div
+          v-for="product in products"
+          :key="product.name"
           class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-gray-50 md:rounded-xl"
         >
           <div class="flex flex-col px-10 pb-8 pt-8 sm:px-16">
-            <h3 class="text-xl leading-none">Research</h3>
+            <h3 class="leading-none text-gray-600">Equity Trading</h3>
             <p
-              class="mt-5 text-3xl mb-4 font-semibold leading-none tracking-tighter md:text-4xl"
+              class="mt-5 text-2xl mb-4 font-semibold leading-none tracking-tighter"
             >
-              Maximizing added value
+              {{ product.slogan }}
             </p>
 
             <p class="font-light text-gray-600">
-              We provide our clients with a unique perspective, in-depth
-              knowledge, and conviction.
+              Just trade in your eligible computer for credit or recycle it for
+              free. It’s good for you and the planet.
             </p>
             <a
               href="#_"
-              class="bg-primary-500 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
+              class="bg-gray-900 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
               >Learn more
             </a>
           </div>
-          <img
-            class="h-[350px] w-auto"
-            src="/illustrations/business-3d-close-up-of-businesswoman-in-red-suit-with-paper-coffee-cup.png"
-          />
-        </div>
-        <div
-          class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-gray-50 md:rounded-xl"
-        >
-          <div class="flex flex-col px-10 pb-8 pt-8 sm:px-16">
-            <h3 class="text-xl leading-none">Investment Banking</h3>
-            <p
-              class="mt-5 text-3xl mb-4 font-semibold leading-none tracking-tighter md:text-4xl"
-            >
-              Achieve short & long term goals
-            </p>
-
-            <p class="font-light text-gray-600">
-              Our investment banking team brings a wealth of experience and a
-              vast network with one-goal in mind: to maximize value.
-            </p>
-            <a
-              href="#_"
-              class="bg-primary-500 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
-              >Learn more
-            </a>
-          </div>
-          <img class="h-[350px] w-auto" src="/illustrations/old-man.png" />
+          <img class="h-[300px] w-auto" :src="product.thumbnail" />
         </div>
       </div>
     </div>

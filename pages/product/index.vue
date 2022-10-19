@@ -1,50 +1,80 @@
 <script setup>
-const { client } = usePrismic()
-const { data: products } = await useAsyncData('products', () =>
-  client.getAllByType('products')
-)
+// const { client } = usePrismic()
+// const { data } = await useAsyncData('products', () =>
+//   client.getAllByType('products')
+// )
 
-console.log(products)
+const products = [
+  {
+    name: 'Equity Trading',
+    slogan: 'Become a trading partner',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail: '/illustrations/business-3d-young-women-standing.png',
+  },
+  {
+    name: 'Fixed Income',
+    slogan: 'Better understand fixed income',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail: '/illustrations/image_3.png',
+  },
+  {
+    name: 'Research',
+    slogan: 'Maximizing added value',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail:
+      '/illustrations/business-3d-businesswoman-in-red-suit-with-paper-coffee-cup.png',
+  },
+  {
+    name: 'Investment Banking',
+    slogan: 'Achieve short & long term goals',
+    caption:
+      'Just trade in your eligible computer for credit or recycle it for free. It’s good for you and the planet.',
+    thumbnail:
+      '/illustrations/business-3d-businesswoman-in-red-suit-showing-thumbs-up.png',
+  },
+]
 </script>
 
 <template>
-  <section
-    id="page-products"
-    class="w-full bg-white py-10 mx-auto max-w-7xl md:px-8"
-  >
-    <h1 class="mb-8">Our Products</h1>
-    <div class="grid grid-cols-2 gap-8">
-      <div
-        v-for="product in products"
-        :key="product.id"
-        class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-gray-50 md:rounded-xl"
-      >
-        <div class="flex flex-col px-10 pb-8 pt-8 sm:px-16">
-          <h3 class="text-xl leading-none">Caption</h3>
+  <section class="w-full bg-white">
+    <div class="py-16 mx-auto max-w-7xl md:px-8">
+      <div class="w-full mx-auto text-left md:text-center pb-10">
+        <h1 class="text-4xl font-bold">Our Products</h1>
+        <p class="mt-6 text-xl text-gray-600 max-w-4xl mx-auto text-center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 gap-8">
+        <div
+          v-for="product in products"
+          :key="product.name"
+          class="flex flex-col items-center justify-center flex-1 overflow-hidden text-center bg-gray-50 md:rounded-xl"
+        >
+          <div class="flex flex-col px-10 pb-8 pt-8 sm:px-16">
+            <h3 class="leading-none text-gray-600">Equity Trading</h3>
+            <p
+              class="mt-5 text-2xl mb-4 font-semibold leading-none tracking-tighter"
+            >
+              {{ product.slogan }}
+            </p>
 
-          <prismic-text
-            wrapper="h4"
-            class="mt-5 text-3xl mb-4 font-semibold leading-none tracking-tighter md:text-4xl"
-            :field="product.data.title"
-          />
-
-          <prismic-text
-            wrapper="p"
-            class="font-light text-gray-600"
-            :field="product.data.caption"
-          />
-
-          <a
-            :href="`/product/${product.uid}`"
-            class="bg-primary-500 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
-          >
-            Learn more
-          </a>
+            <p class="font-light text-gray-600">
+              Just trade in your eligible computer for credit or recycle it for
+              free. It’s good for you and the planet.
+            </p>
+            <a
+              href="/product/detail"
+              class="bg-gray-900 text-white mt-8 mx-auto inline-block rounded-full px-5 py-1.5"
+              >Learn more
+            </a>
+          </div>
+          <img class="h-[300px] w-auto" :src="product.thumbnail" />
         </div>
-        <img
-          class="h-[350px] w-auto"
-          src="https://images.prismic.io/benefeeddulur/d21f8c2f-cca3-4025-9734-bebbba6e7b41_Become+a+trading+partner.png"
-        />
       </div>
     </div>
   </section>

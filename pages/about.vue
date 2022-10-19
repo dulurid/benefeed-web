@@ -1,19 +1,19 @@
 <template>
   <div>
-    <section class="py-10 bg-white sm:py-16 lg:py-24">
+    <section class="py-10 bg-white">
       <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
         <div class="grid items-center md:grid-cols-2 gap-y-10 md:gap-x-20">
           <div class="pr-12 sm:pr-0">
-            <div class="relative max-w-xs mb-12">
+            <div class="relative max-w-sm mb-12">
               <img
-                class="object-bottom rounded-md"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/man-eating-noodles.jpg"
+                class="object-bottom rounded-md bg-gray-50 px-6 pt-6"
+                src="/illustrations/business-3d-businesswoman-in-red-suit-waving-hello.png"
                 alt=""
               />
 
               <img
-                class="absolute origin-bottom-right scale-75 rounded-md -bottom-12 -right-12"
-                src="https://cdn.rareblocks.xyz/collection/celebration/images/features/4/smiling-businessman.jpg"
+                class="absolute origin-bottom-right h-36 rounded-md -bottom-12 -right-12"
+                src="/illustrations/business-3d-planet-earth.png"
                 alt=""
               />
             </div>
@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <section class="py-10 bg-white sm:py-16 lg:py-20">
+    <section class="pb-32 pt-10 bg-white">
       <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div
           class="grid grid-cols-1 lg:grid-cols-3 gap-y-12 lg:gap-x-8 xl:gap-x-20"

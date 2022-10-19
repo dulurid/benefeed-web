@@ -1,10 +1,43 @@
 <script setup>
-const { client } = usePrismic()
-const { data } = await useAsyncData('blogs', () => client.getAllByType('blogs'))
+// const { client } = usePrismic()
+// const { data } = await useAsyncData('blogs', () => client.getAllByType('blogs'))
+
+const blogs = [
+  {
+    id: 1,
+    title: 'Embracing Emojis: Why Chat is Your Event Heartbeat',
+    thumbnail: 'https://doimages.nyc3.digitaloceanspaces.com/Blog-pattern7.jpg',
+  },
+  {
+    id: 2,
+    title: 'Embracing Emojis: Why Chat is Your Event Heartbeat',
+    thumbnail: 'https://doimages.nyc3.digitaloceanspaces.com/Blog-pattern8.jpg',
+  },
+  {
+    id: 3,
+    title: 'Embracing Emojis: Why Chat is Your Event Heartbeat',
+    thumbnail: 'https://doimages.nyc3.digitaloceanspaces.com/Blog-pattern9.jpg',
+  },
+  {
+    id: 4,
+    title: 'Embracing Emojis: Why Chat is Your Event Heartbeat',
+    thumbnail: 'https://doimages.nyc3.digitaloceanspaces.com/Blog-pattern4.jpg',
+  },
+  {
+    id: 5,
+    title: 'Embracing Emojis: Why Chat is Your Event Heartbeat',
+    thumbnail: 'https://doimages.nyc3.digitaloceanspaces.com/Blog-pattern5.jpg',
+  },
+  {
+    id: 6,
+    title: 'Embracing Emojis: Why Chat is Your Event Heartbeat',
+    thumbnail: 'https://doimages.nyc3.digitaloceanspaces.com/Blog-pattern6.jpg',
+  },
+]
 </script>
 
 <template>
-  <section class="py-10 bg-white sm:py-16 lg:py-24">
+  <section class="py-10 bg-white">
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="max-w-2xl mx-auto text-center">
         <h2
@@ -20,36 +53,42 @@ const { data } = await useAsyncData('blogs', () => client.getAllByType('blogs'))
         </p>
       </div>
 
-      <div
-        class="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12"
-      >
-        <a :href="`/blog/${blog.uid}`" v-for="blog in data" :key="blog.id">
-          <div class="block aspect-w-4 aspect-h-3">
-            <img
-              class="object-cover w-full h-full"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/blog/1/blog-post-1.jpg"
-              alt=""
-            />
-          </div>
-          <prismic-text
-            wrapper="p"
-            :field="blog.data.blogtitle"
-            class="mt-6 text-xl font-semibold"
-          />
-          <prismic-text
-            wrapper="p"
-            :field="blog.data.content"
-            class="mt-4 text-gray-600 line-clamp-2"
-          />
-          <div
-            class="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"
-          ></div>
-          <span
-            class="block text-sm font-bold tracking-widest text-gray-500 uppercase"
+      <div class="max-w-7xl mx-auto px-6 py-10 md:px-12 xl:px-6">
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <a
+            href="/blog/detail"
+            v-for="blog in blogs"
+            :key="blog.id"
+            class="group p-6 cursor-pointer rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
           >
-            Martin Jones . June 12, 2021
-          </span>
-        </a>
+            <div class="relative overflow-hidden rounded-xl">
+              <img
+                :src="blog.thumbnail"
+                alt="art cover"
+                loading="lazy"
+                width="1000"
+                height="667"
+                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div class="mt-6 relative">
+              <h3
+                class="text-2xl font-semibold tracking-tight text-gray-800 dark:text-white"
+              >
+                {{ blog.title }}
+              </h3>
+              <p
+                class="mt-6 mb-8 text-gray-600 dark:text-gray-300 line-clamp-2"
+              >
+                Slow application build times not only decelerate innovation but
+                also affect developer productivity in more ways than one.
+              </p>
+              <a class="inline-block" href="#">
+                <span class="text-blue-600 dark:text-blue-300">Read more</span>
+              </a>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   </section>
