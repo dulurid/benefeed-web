@@ -21,12 +21,14 @@ useHead({
         <div
           class="text-center py-12 max-w-2xl md:max-w-3xl mx-auto md:py-16 md:px-0 px-8"
         >
-          <h1 class="mb-8">
+          <h1 class="mb-8" v-motion v-bind="useSlideUpMotion(50)">
             Belajar Investasi <br />
             Pilihan Saham terbaik
           </h1>
 
           <p
+            v-motion
+            v-bind="useSlideUpMotion(100)"
             class="font-normal text-gray-500 text-base mx-auto max-w-2xl lg:text-lg mb-12 poppins md:text-center text-center"
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -35,6 +37,8 @@ useHead({
           </p>
 
           <div
+            v-motion
+            v-bind="useSlideUpMotion(100)"
             class="flex flex-col sm:flex-row items-center justify-center gap-5"
           >
             <a
@@ -63,7 +67,11 @@ useHead({
 
         <!-- Logos Block -->
         <div class="absolute inset-y-16 left-16">
-          <div class="relative group hidden lg:flex">
+          <div
+            class="relative group hidden lg:flex"
+            v-motion
+            v-bind="useSlideUpMotion(0)"
+          >
             <div
               class="absolute transitiona-all duration-1000 opacity-25 -inset-px bg-gradient-to-r from-orange-400 via-primary-300 to-primary-600 rounded-xl blur-3xl filter group-hover:opacity-50 group-hover:-inset-1 group-hover:duration-200"
             ></div>
@@ -75,7 +83,11 @@ useHead({
           </div>
         </div>
         <div class="absolute inset-y-16 -right-16">
-          <div class="relative group hidden lg:flex">
+          <div
+            class="relative group hidden lg:flex"
+            v-motion
+            v-bind="useSlideUpMotion(150)"
+          >
             <div
               class="absolute transitiona-all duration-1000 opacity-25 -inset-px bg-gradient-to-r from-orange-400 via-primary-300 to-primary-600 rounded-xl blur-3xl filter group-hover:opacity-50 group-hover:-inset-1 group-hover:duration-200"
             ></div>
@@ -93,109 +105,22 @@ useHead({
       <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="max-w-2xl mx-auto text-center">
           <h2
+            v-motion
+            v-bind="useSlideUpMotion(0)"
             class="text-2xl font-bold text-gray-800 sm:text-4xl sm:leading-tight"
           >
             Trusted by many companies.
           </h2>
         </div>
 
-        <div
-          class="grid items-center max-w-4xl grid-cols-2 mx-auto mt-12 md:mt-20 md:grid-cols-4 gap-x-10 gap-y-16"
-        >
-          <div>
-            <img
-              class="object-contain w-full h-6 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-1.png"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-2.png"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-3.png"
-              alt=""
-            />
-          </div>
-
-          <div>
-            <img
-              class="object-contain w-full mx-auto h-7"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-4.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-5.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-6.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-7.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-8.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-9.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full mx-auto h-7"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-10.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-11.png"
-              alt=""
-            />
-          </div>
-
-          <div class="hidden md:block">
-            <img
-              class="object-contain w-full h-8 mx-auto"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/logos/3/logo-12.png"
-              alt=""
-            />
+        <div class="grid grid-cols-5 gap-16 mt-16 place-items-center">
+          <div
+            v-for="index in 10"
+            :key="index"
+            v-motion
+            v-bind="useSlideUpMotion(index * 50)"
+          >
+            <img :src="`/icon/Company Placeholder-${index}.svg`" alt="" />
           </div>
         </div>
 

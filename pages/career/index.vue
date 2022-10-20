@@ -12,12 +12,18 @@ const { data } = await useAsyncData('career', () =>
         <div class="grid items-center md:grid-cols-2 md:gap-x-20 gap-y-10">
           <div class="relative pl-16 pr-10 sm:pl-6 md:pl-0 xl:pr-0 md:order-2">
             <img
+              v-motion
+              v-bind="useSlideUpMotion(150)"
               class="absolute top-6 -right-4 xl:-right-12"
               src="https://cdn.rareblocks.xyz/collection/celebration/images/features/3/dots-pattern.svg"
               alt=""
             />
 
-            <div class="relative max-w-xs ml-auto">
+            <div
+              class="relative max-w-xs ml-auto"
+              v-motion
+              v-bind="useSlideUpMotion(100)"
+            >
               <div class="overflow-hidden aspect-w-3 aspect-h-4">
                 <img
                   class="object-cover w-full h-full"
@@ -26,7 +32,11 @@ const { data } = await useAsyncData('career', () =>
                 />
               </div>
 
-              <div class="absolute bottom-0 -left-16">
+              <div
+                class="absolute bottom-0 -left-16"
+                v-motion
+                v-bind="useSlideUpMotion(200)"
+              >
                 <div class="bg-yellow-300">
                   <div class="py-4 pl-4 pr-10 sm:py-6 sm:pl-8 sm:pr-16">
                     <svg
@@ -61,17 +71,25 @@ const { data } = await useAsyncData('career', () =>
 
           <div class="md:order-1">
             <h2
+              v-motion
+              v-bind="useSlideUpMotion(0)"
               class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
             >
               Grow business with Celebration.
             </h2>
-            <p class="mt-4 text-base leading-relaxed text-gray-600">
+            <p
+              class="mt-4 text-base leading-relaxed text-gray-600"
+              v-motion
+              v-bind="useSlideUpMotion(50)"
+            >
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
 
             <a
+              v-motion
+              v-bind="useSlideUpMotion(75)"
               href="#"
               title=""
               class="inline-flex items-center justify-center px-8 py-3 mt-8 text-base font-semibold text-white transition-all duration-200 bg-gray-600 rounded-md hover:bg-gray-700 focus:bg-gray-700"

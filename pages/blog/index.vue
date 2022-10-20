@@ -41,11 +41,15 @@ const blogs = [
     <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
       <div class="max-w-2xl mx-auto text-center">
         <h2
+          v-motion
+          v-bind="useSlideUpMotion(0)"
           class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl"
         >
           Latest from blog
         </h2>
         <p
+          v-motion
+          v-bind="useSlideUpMotion(50)"
           class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600"
         >
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -57,11 +61,17 @@ const blogs = [
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           <a
             href="/blog/detail"
-            v-for="blog in blogs"
+            v-for="(blog, index) in blogs"
             :key="blog.id"
             class="group p-6 cursor-pointer rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10"
+            v-motion
+            v-bind="useSlideUpMotion(index * 50)"
           >
-            <div class="relative overflow-hidden rounded-xl">
+            <div
+              class="relative overflow-hidden rounded-xl"
+              v-motion
+              v-bind="useSlideUpMotion(index * 75)"
+            >
               <img
                 :src="blog.thumbnail"
                 alt="art cover"
